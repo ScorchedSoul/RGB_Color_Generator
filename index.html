@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Generator</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/9d3faebd6c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="color-container"></div>
+
+        <d class="slider-container">
+            
+            <div class="slider">R<input type="range" min="0" max="255" value="0" id="red" oninput="colorChange()"></div>
+            <div class="slider">G<input type="range" min="0" max="255" value="0" id="green" oninput="colorChange()"></div>
+            <div class="slider">B<input type="range" min="0" max="255" value="0" id="blue" oninput="colorChange()"></div>
+
+        </div>
+
+        <div class="rgb-value">rgb ( 0 , 0 , 0 )</div>
+
+    </div>
+
+    <!-- github -->
+    <!-- <div class="github">
+        <i class="fa-brands fa-github-alt" ></i>
+    </div> -->
+    
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

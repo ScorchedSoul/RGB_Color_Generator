@@ -1,0 +1,136 @@
+/* CSS STYLING */
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Mouse+Memoirs&family=Noto+Sans+JP:wght@500&family=Poppins:wght@200&family=Roboto:wght@300;400&family=Rubik+Dirt&family=Ubuntu:wght@300;400&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: none;
+    all: none;
+}
+
+body
+{
+    background: url('https://images.unsplash.com/photo-1614850715973-58c3167b30a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGNvbG9yJTIwc3BsYXNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+
+    font-family: Roboto , sans-serif;
+    font-weight: 900;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    width: 400px;
+    height: 450px;
+
+    border-bottom: 1px solid rgb(35, 35, 35);
+    border-right: 1px solid rgb(45, 44, 44);
+    border-left: 1px solid rgb(165, 163, 163);
+    border-top: 1px solid rgb(174, 171, 171);
+
+    box-shadow: 4px 4px 14px black;
+    border-radius: 2px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-container
+{
+    width: 80%;
+    height: 40%;
+
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+    background-color: white;
+
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px rgb(145, 142, 142);
+}
+
+.slider-container
+{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    text-align: center;
+}
+
+.slider
+{
+    width: 100%;
+}
+
+input
+{
+    width:270px;
+    font-size:1.5rem;
+
+    margin: 10px;
+}
+
+.rgb-value
+{
+    color: white;
+    background-color: #4671EA;
+    padding: 8px;
+    margin-top: 30px;
+    padding-left: 14px;
+    padding-right: 14px;
+
+    width: auto;
+    border-radius: 2px;
+
+    box-shadow: 2px 2px 4px black;
+    letter-spacing: 2px;
+}
+
+/* RESPONSIVE USING MEDIA QUERIES */
+
+@media only screen and (max-width: 420px)
+{
+
+    .container
+    {
+        width: 90%;
+    }
+
+    .slider
+    {
+        width: 85%;
+        font-size: 0.8rem;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    input
+    {
+        height: 10px;
+        width: 90%;
+    }
+
+}
